@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>明志科技大學法國週 Semaine de France 2026</title>
+<meta name="description" content="明志科技大學法國週，2026.11.23–11.26。查看每日活動時間、地點與報名資訊。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 99 100'%3E%3Crect width='33' height='100' fill='%2312234a'/%3E%3Crect x='33' width='33' height='100' fill='%23fff'/%3E%3Crect x='66' width='33' height='100' fill='%23c8102e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Noto+Serif+TC:wght@600;900&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#12234a;--navy2:#1e3a7a;--red:#c8102e;--cream:#f6efe2;--white:#fff;--ink:#1b2440;
+--serif:"Playfair Display","Noto Serif TC",Georgia,"Times New Roman",serif;
+--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:400 1rem/1.75 var(--sans);color:var(--ink);background:var(--cream)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{width:min(1080px,92%);margin:auto}
+.tri{display:flex;height:8px}.tri i{flex:1}.tri i:nth-child(1){background:#2a4a9a}.tri i:nth-child(2){background:#fff}.tri i:nth-child(3){background:var(--red)}
+
+/* 導覽列 */
+.nav{position:fixed;inset:0 0 auto;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:.9rem 4%;color:#fff;transition:background .3s,padding .3s}
+.nav.solid{background:var(--navy);padding:.55rem 4%;box-shadow:0 2px 14px rgba(0,0,0,.25)}
+.brand{font:700 1.15rem var(--serif);text-decoration:none;position:relative;z-index:30}
+.brand b{color:#ff7388;font-style:italic}
+.links{display:flex;align-items:center;gap:1.5rem}
+.links a{text-decoration:none;font-weight:500;position:relative}
+.links a:not(.x)::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--red);transition:width .25s}
+.links a:hover::after{width:100%}
+.lang{display:flex;border:1.5px solid #fff;border-radius:99px;overflow:hidden}
+.lang button{font:600 .85rem var(--sans);color:#fff;background:none;border:0;padding:.25rem .8rem;cursor:pointer}
+.lang button[aria-pressed=true]{background:#fff;color:var(--navy)}
+.burger{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer;position:relative;z-index:30}
+.burger span{display:block;height:2px;background:#fff;margin:7px 9px}
+
+/* 首頁 */
+.hero{position:relative;min-height:100vh;min-height:100svh;background:var(--navy);color:#fff;display:flex;align-items:center;overflow:hidden;padding:7rem 4% 5rem}
+.art{position:absolute;right:max(2%,calc(50% - 540px));bottom:12px;height:88%;width:auto;animation:rise 1.2s both}
+.hero-in{position:relative;width:min(1080px,100%);margin:auto}
+.hero-in>*{max-width:36rem}
+.date{color:#ffd9de;font-weight:500;letter-spacing:.08em;margin-bottom:.8rem}
+h1{font:900 clamp(2.8rem,9vw,6.2rem)/1.02 var(--serif);animation:rise .9s .15s both}
+.zh{font:600 clamp(1.5rem,4vw,2.4rem) var(--serif);margin:.6rem 0 1.2rem;color:var(--cream);animation:rise .9s .3s both}
+.lead{font-size:1.15rem;margin-bottom:2rem;animation:rise .9s .45s both}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:.85rem 2rem;border-radius:99px;font-weight:500;text-decoration:none;transition:transform .2s,background .2s;animation:rise .9s .6s both}
+.btn:hover{background:#e0233f;transform:translateY(-3px)}
+.hero .tri{position:absolute;left:0;right:0;bottom:0;height:12px}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+/* 區塊 */
+.sec{padding:5.5rem 0}.white{background:#fff}
+h2{font:700 clamp(1.7rem,4vw,2.5rem)/1.25 var(--serif);color:var(--navy)}
+.sub{font:italic 700 1.05rem var(--serif);color:var(--red);margin:.2rem 0 1.4rem}
+.about p{max-width:46rem;font-size:1.08rem}
+.hr{width:64px;height:4px;background:linear-gradient(90deg,var(--navy) 33%,#d8d2c4 33% 66%,var(--red) 66%);margin:1.2rem 0}
+
+/* 活動卡片 */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem;margin-top:2rem}
+.card{background:var(--cream);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 0 var(--navy);transition:transform .25s}
+.card:hover{transform:translateY(-4px)}
+.top{background:var(--navy);color:#fff;padding:1.1rem 1.4rem;display:flex;align-items:center;gap:1rem;border-bottom:5px solid var(--red)}
+.dn{font:900 2.6rem/1 var(--serif);color:#ff7388}
+.top small{display:block;opacity:.8;font-size:.85rem}
+.top strong{font-weight:500;font-size:1.05rem}
+.cb{padding:1.3rem 1.4rem 1.5rem;display:flex;flex-direction:column;flex:1}
+.meta{list-style:none;padding:0;margin-bottom:1rem;font-size:.95rem}
+.meta li{display:flex;gap:.55rem;padding:.1rem 0}
+.meta svg{flex:none;width:18px;height:18px;margin-top:.32rem;stroke:var(--red);fill:none;stroke-width:2}
+.cb h3{font:700 1.45rem/1.3 var(--serif);color:var(--navy)}
+.en{display:block;font:italic 700 .95rem var(--serif);color:var(--red);margin-bottom:.4rem}
+.intro{margin:.5rem 0}
+.items{list-style:none;padding:0;margin:.8rem 0}
+.items li{padding:.65rem 0 .65rem .9rem;border-left:3px solid var(--red);margin-bottom:.5rem;background:#fff}
+.items b{display:block;color:var(--navy)}.items small{display:block;color:var(--red);font-style:italic}
+.items p{font-size:.93rem;color:#3a4260}
+.soon{margin:.8rem 0;padding:1rem;background:#fff;border:1.5px dashed var(--navy2);color:var(--navy);border-radius:4px}
+.reg{margin-top:auto;padding-top:1rem}
+.reg a,.reg span{display:block;text-align:center;padding:.8rem;border-radius:99px;font-weight:500;text-decoration:none}
+.reg>*+*{margin-top:.6rem}
+.reg a{background:var(--red);color:#fff;transition:background .2s}.reg a:hover{background:#e0233f}
+.reg span{background:#e5dfd0;color:#6b6f80;cursor:not-allowed}
+
+.p{display:block}
+.s{display:block;font-size:.86em;color:#5d6380;font-weight:400}
+h2 .s{font:italic 700 1.05rem var(--serif);color:var(--red);margin:.3rem 0 .2rem}
+.hero .s,.foot .s{color:#c9d0e6}
+.hero .zh .s{font:italic 700 1.1rem var(--serif);margin-top:.2rem}
+.lead .s{font-size:.95rem;margin-top:.4rem}
+.about p .s{margin-top:.7rem;font-size:.95em}
+.items .s{font-size:.88rem;margin-top:.1rem}
+.meta .s{font-size:.84rem}
+.soon .s{margin-top:.2rem}
+.reg .s{color:inherit}
+.venue .s{font-size:.85rem}
+.top small{display:block}
+/* 地點 */
+.venue{list-style:none;padding:0;margin-top:1.6rem;display:grid;gap:.9rem}
+.venue li{display:flex;gap:1.2rem;align-items:center;background:var(--cream);padding:1rem 1.3rem;border-left:5px solid var(--navy);border-radius:4px}
+.venue b{font:900 1.4rem var(--serif);color:var(--red);min-width:4.2rem}
+
+.foot{position:relative;background:var(--navy);color:var(--cream);text-align:center;padding:3.5rem 0 3rem}
+.foot .brand{font-size:1.6rem}.foot p{margin:.2rem 0}
+.foot em{display:block;margin-top:1rem;font:italic 700 1.2rem var(--serif);color:#ff7388}
+
+@media(max-width:960px){
+ .burger{display:block}
+ .links{position:fixed;top:0;left:0;right:0;flex-direction:column;background:var(--navy);padding:5rem 0 2rem;gap:1.2rem;transform:translateY(-110%);transition:transform .35s;z-index:25}
+ .links.open{transform:none}
+ .art{opacity:.25;right:-8%;height:72%}
+ .grid{grid-template-columns:1fr}
+ .venue li{flex-direction:column;align-items:flex-start;gap:.2rem}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="brand" href="#home">Semaine de <b>France</b></a>
+  <button class="burger" id="burger" aria-label="選單 Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="links" id="links">
+    <a class="inl" href="#home" data-zh="首頁" data-en="Home">首頁</a>
+    <a class="inl" href="#about" data-zh="關於" data-en="About">關於</a>
+    <a class="inl" href="#events" data-zh="活動" data-en="Events">活動</a>
+    <a class="inl" href="#venue" data-zh="地點" data-en="Venue">地點</a>
+    <a class="inl" href="#contact" data-zh="聯絡" data-en="Contact">聯絡</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="bzh" aria-pressed="true">中文</button><button type="button" id="ben" aria-pressed="false">EN</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <svg class="art" viewBox="0 0 500 700" aria-hidden="true">
+    <circle cx="250" cy="330" r="200" fill="#c8102e"/><circle cx="250" cy="330" r="140" fill="#12234a" opacity=".22"/>
+    <path d="M250 50l12 150 22 120 62 370H300l-14-70q-36-36-72 0l-14 70H152l62-370 22-120z" fill="#f6efe2"/>
+    <g stroke="#12234a" stroke-width="3" fill="none"><path d="M240 200l-18 110 22 110M260 200l18 110-22 110M222 310l56 110M278 310l-56 110M232 250h36"/></g>
+    <g fill="#f6efe2"><rect x="224" y="190" width="52" height="12"/><rect x="204" y="300" width="92" height="12"/><rect x="186" y="415" width="128" height="12"/></g>
+    <g fill="#fff" opacity=".7"><circle cx="70" cy="90" r="3"/><circle cx="430" cy="140" r="3"/><circle cx="110" cy="230" r="2"/><circle cx="410" cy="60" r="2"/></g>
+  </svg>
+  <div class="hero-in">
+    <p class="date">2026.11.23 – 11.26</p>
+    <h1>Semaine de France</h1>
+    <p class="zh" data-zh="明志科技大學法國週" data-en="Ming Chi University of Technology · French Week">明志科技大學法國週</p>
+    <p class="lead" data-zh="一起探索法國文化，體驗法式生活的魅力。" data-en="Discover French culture and experience the charm of French life.">一起探索法國文化，體驗法式生活的魅力。</p>
+    <a class="btn inl" href="#events" data-zh="探索活動 Explore Events" data-en="Explore Events">探索活動 Explore Events</a>
+  </div>
+  <div class="tri"><i></i><i></i><i></i></div>
+</section>
+
+<section class="sec white about" id="about">
+  <div class="wrap">
+    <h2 data-zh="關於法國週" data-en="About French Week">關於法國週</h2>
+    <div class="hr"></div>
+    <p data-zh="法國週是一場結合法國文化、藝術與運動體驗的校園活動，透過不同主題的活動，讓參與者認識法國文化，感受法式生活的獨特魅力。" data-en="French Week is a campus event celebrating French culture, art, and sports. Through a variety of activities, participants can discover French traditions and experience the charm of French life.">法國週是一場結合法國文化、藝術與運動體驗的校園活動，透過不同主題的活動，讓參與者認識法國文化，感受法式生活的獨特魅力。</p>
+  </div>
+</section>
+
+<section class="sec" id="events">
+  <div class="wrap">
+    <h2 data-zh="活動時程" data-en="Events">活動時程</h2>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="sec white" id="venue">
+  <div class="wrap">
+    <h2 data-zh="活動地點" data-en="Venue">活動地點</h2>
+    <ul class="venue" id="venueList"></ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="tri" style="position:absolute;left:0;right:0;top:0"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <p class="brand">Semaine de <b>France</b></p>
+    <p data-zh="明志科技大學法國週" data-en="Ming Chi University of Technology French Week">明志科技大學法國週</p>
+    <p>2026.11.23 – 11.26</p>
+    <em>Vive la France !</em>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   【報名網址設定區】—— 日後只需要修改這裡！
+   做法：把 Google 表單網址貼在對應那一天的雙引號中間，例如：
+     day1: "https://forms.gle/xxxxxxxx",
+   · 留空 ""（兩個雙引號中間什麼都沒有）→ 按鈕會顯示「報名資訊即將公布」，無法點擊
+   · 四天各自獨立，不會互相影響
+   · 網址必須以 https:// 開頭，且要保留結尾的雙引號與逗號
+   · 修改後存檔、重新上傳到 GitHub，大約 1–2 分鐘後網站就會更新
+   ============================================================ */
+const registrationLinks = {
+  day1: "https://forms.gle/Yudxnwo4nJDLg1EK7",   // 11/23（一）法國週開幕之夜 報名網址
+  day2: "https://forms.gle/Xyy7AvDMnheoBM2J9",   // 11/24（二）運動交流日 報名網址
+  day3_local: "https://forms.gle/ZfsWg4EXMXxpJLdT8",   // 11/25（三）本地生報名網址
+  day3_intl:  "https://forms.gle/iZe7pGCCD9snSpA16",   // 11/25（三）境外生報名網址
+  day4: "https://forms.gle/e42dFQSipeZqz8Xv5"    // 11/26（四）法式料理手作工作坊 報名網址
+};
+
+/* ============================================================
+   【活動資料區】—— 之後公布 Day 2、Day 3 詳細內容時，
+   把 items 的 [] 換成活動清單（格式可參考 day1）即可。
+   每個文字都是 [中文, English]。
+   ============================================================ */
+const events = [
+  { id:"day1", n:"01", date:[ "11 月 23 日", "Nov 23" ], wd:["星期一","Monday"],
+    time:"17:50–20:30", place:["體育館一樓","Gymnasium 1F"],
+    cap:["限額 80 人，額滿為止","Maximum Participants: 80"],
+    title:["法國週開幕之夜","Opening Night"],
+    intro:["誠摯邀請您參加法國週開幕之夜！活動內容豐富，帶您感受法國文化的獨特魅力！","Welcome to French Week 2026! Join us for an exciting opening night featuring French language learning, cultural performances, Scoubidou bracelet making, board games, and French food culture."],
+    items:[
+      [["法語學習","French Language Learning"],null],
+      [["文化表演","Cultural Performances"],null],
+      [["法式編繩手環 DIY","Scoubidou Bracelet Making"],null],
+      [["桌上遊戲","Board Games"],null],
+      [["法國美食文化體驗","French Food Culture"],null]
+    ],
+    note:["請填寫報名表單以保留您的名額！","Please complete this registration form to reserve your spot!"]},
+  { id:"day2", n:"02", date:["11 月 24 日","Nov 24"], wd:["星期二","Tuesday"],
+    time:"16:00–20:00", place:["創辦人紀念公園及體育館五樓","Founder Memorial Park & Gymnasium 5F"],
+    title:["運動交流日","Competition Day"],
+    intro:["歡迎大家踴躍參與，一同度過充滿活力與歡樂的運動交流日！歡迎來享受精彩的運動活動，包括法式滾球、排球與躲避球。","Welcome to French Week 2026 – Competition Day! Come and enjoy exciting sports activities, including French Pétanque, Volleyball, and Dodgeball."],
+    items:[
+      [["法式滾球","Pétanque"],null],
+      [["排球","Volleyball"],null],
+      [["躲避球","Dodgeball"],null]
+    ]},
+  { id:"day3", n:"03", date:["11 月 25 日","Nov 25"], wd:["星期三","Wednesday"],
+    time:"17:30–19:30", place:["創新大樓二樓國際會議廳","International Conference Hall, 2F, Innovation Building"],
+    cap:["限額 200 人，額滿為止","Maximum Participants: 200"],
+    regs:[["day3_local",["本地生報名","Local Students"]],["day3_intl",["境外生報名","International Students"]]],
+    open:["11 月 19 日 17:00 開放報名","Registration opens Nov 19, 5:00 PM"],
+    title:["法國週活動","French Week Event"],
+    intro:["誠摯邀請您一同探索精彩的法國文化！活動內容包含故事分享、文化交流，以及充滿趣味的知識問答，還有機會獲得精美獎品！","Welcome to French Week 2026! Discover fascinating French culture through storytelling, cultural sharing, and an exciting quiz with prizes!"],
+    items:[
+      [["故事分享","Storytelling"],null],
+      [["文化交流","Cultural Sharing"],null],
+      [["知識問答","Quiz with Prizes"],null]
+    ],
+    note:["歡迎大家踴躍參與，與我們一起探索法國文化的魅力！","Come and explore French culture with us!"]},
+  { id:"day4", n:"04", date:["11 月 26 日","Nov 26"], wd:["星期四","Thursday"],
+    time:"17:30–19:30", place:["國際事務處（OIA）","Office of International Affairs (OIA)"],
+    cap:["限額 30 人，額滿為止","Maximum Participants: 30"],
+    title:["法式料理手作工作坊","French Cooking Workshop"],
+    intro:["誠摯邀請您參加法式料理手作工作坊！活動將帶領您親手製作三道經典法國料理，一起體驗法國美食文化的魅力！","Welcome to French Week 2026! Experience French cuisine through a hands-on cooking workshop. Learn how to make Tarte Flambée, Vegetarian Quiche, and French Crêpes."],
+    items:[
+      [["法式薄餅","Tarte Flambée"],null],
+      [["蔬食鹹派","Vegetarian Quiche"],null],
+      [["法式可麗餅","French Crêpes"],null]
+    ],
+    note:["限額 30 人，額滿為止","Limited to 30 participants, until full"]}
+];
+
+/* ======== 以下為網站功能程式，一般不需要修改 ======== */
+/* 每一句話都同時顯示中文與英文；切換按鈕只決定哪一種語言排在前面、顯示較大 */
+const T = {
+  reg:["立即報名","Register Now"],
+  wait:["報名資訊即將公布","Registration opens soon"],
+  soon:["活動內容敬請期待","Details coming soon"]
+};
+const ICON = {
+  cal:'<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>',
+  clock:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  people:'<svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-4 3-6 6.5-6s6.5 2 6.5 6M16 5a3.5 3.5 0 0 1 0 7M18 14c2.2.6 3.5 2.4 3.5 6"/></svg>',
+  pin:'<svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>'
+};
+let lang = 0; // 0 = 中文在前, 1 = English 在前
+
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function validLink(u){ return typeof u === "string" && /^https?:\/\//i.test(u.trim()); }
+/* 輸入 [中文, English]，輸出「主要語言 + 次要語言」兩行 */
+function bi(a){ return `<span class="p">${esc(a[lang])}</span><span class="s">${esc(a[1-lang])}</span>`; }
+
+function render(){
+  document.getElementById("grid").innerHTML = events.map(e => {
+    const dateFull = [`${e.date[0]}（${e.wd[0]}）`, `${e.wd[1]}, ${e.date[1]}`];
+    const btnText = lang ? `${T.reg[1]} ${T.reg[0]}` : `${T.reg[0]} ${T.reg[1]}`;
+    const waitText = lang ? `${T.wait[1]} ${T.wait[0]}` : `${T.wait[0]} ${T.wait[1]}`;
+    const regList = e.regs || [[e.id, null]];
+    const btn = regList.map(r => {
+      const link = registrationLinks[r[0]], lb = r[1];
+      const txt = lb ? (lang ? `${lb[1]} ${lb[0]}` : `${lb[0]} ${lb[1]}`) : btnText;
+      return validLink(link)
+        ? `<a href="${esc(link.trim())}" target="_blank" rel="noopener noreferrer">${txt}</a>`
+        : `<span aria-disabled="true">${waitText}</span>`;
+    }).join("");
+    let body = "";
+    if(e.intro) body += `<p class="intro">${bi(e.intro)}</p>`;
+    if(e.items.length){
+      body += '<ul class="items">' + e.items.map(i =>
+        `<li><b>${esc(i[0][lang])}</b><small>${esc(i[0][1-lang])}</small>${i[1] ? `<p>${bi(i[1])}</p>` : ""}</li>`).join("") + "</ul>";
+    } else {
+      body += `<p class="soon">${bi(T.soon)}</p>`;
+    }
+    if(e.note) body += `<p class="soon">${bi(e.note)}</p>`;
+    return `<article class="card">
+      <div class="top"><span class="dn">${e.n}</span><div><small>DAY ${e.n}</small><strong>${esc(dateFull[lang])}</strong><small>${esc(dateFull[1-lang])}</small></div></div>
+      <div class="cb">
+        <ul class="meta">
+          <li>${ICON.cal}<span>${bi(dateFull)}</span></li>
+          <li>${ICON.clock}<span>${e.time}</span></li>
+          <li>${ICON.pin}<span>${bi(e.place)}</span></li>
+          ${e.cap ? `<li>${ICON.people}<span>${bi(e.cap)}</span></li>` : ""}
+          ${e.open ? `<li>${ICON.clock}<span>${bi(e.open)}</span></li>` : ""}
+        </ul>
+        <h3>${esc(e.title[lang])}</h3><span class="en">${esc(e.title[1-lang])}</span>
+        ${body}
+        <div class="reg">${btn}</div>
+      </div></article>`;
+  }).join("");
+
+  document.getElementById("venueList").innerHTML = events.map(e =>
+    `<li><b>${e.date[1].replace("Nov ","11/")}</b><span>${bi(e.place)}</span></li>`).join("");
+}
+
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l ? "en" : "zh-Hant";
+  document.title = "明志科技大學法國週 Semaine de France 2026";
+  document.querySelectorAll("[data-zh]").forEach(el => {
+    const z = el.getAttribute("data-zh"), n = el.getAttribute("data-en");
+    const p = l ? n : z, q = l ? z : n;
+    if(el.classList.contains("inl")){
+      /* 導覽列與按鈕：同一行顯示 */
+      el.textContent = (p === q || /Explore Events/.test(z)) ? (l ? "Explore Events 探索活動" : z) : p + " " + q;
+    } else {
+      el.innerHTML = `<span class="p">${esc(p)}</span><span class="s">${esc(q)}</span>`;
+    }
+  });
+  document.getElementById("bzh").setAttribute("aria-pressed", String(!l));
+  document.getElementById("ben").setAttribute("aria-pressed", String(!!l));
+  render();
+}
+document.getElementById("bzh").onclick = () => setLang(0);
+document.getElementById("ben").onclick = () => setLang(1);
+
+const nav = document.getElementById("nav"), links = document.getElementById("links"), burger = document.getElementById("burger");
+const onScroll = () => nav.classList.toggle("solid", window.scrollY > 40);
+window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+burger.onclick = () => { const o = links.classList.toggle("open"); burger.setAttribute("aria-expanded", String(o)); };
+links.addEventListener("click", e => { if(e.target.tagName === "A"){ links.classList.remove("open"); burger.setAttribute("aria-expanded","false"); } });
+
+setLang(0);
+</script>
+</body>
+</html>
